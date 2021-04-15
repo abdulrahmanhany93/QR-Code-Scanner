@@ -16,6 +16,7 @@ class _HomePageState extends State<HomePage> with AfterLayoutMixin<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       appBar: AppBar(
         elevation: 0,
         backgroundColor: Colors.transparent,
@@ -26,7 +27,7 @@ class _HomePageState extends State<HomePage> with AfterLayoutMixin<HomePage> {
             height: 80,
             margin: EdgeInsets.symmetric(horizontal: 20),
             decoration: BoxDecoration(
-                color: Colors.grey.shade300,
+                color: Colors.grey.shade200,
                 borderRadius: BorderRadius.circular(25)),
             child: Align(
               alignment: Alignment.center,
