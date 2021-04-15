@@ -67,7 +67,9 @@ class _HomePageState extends State<HomePage> with AfterLayoutMixin<HomePage> {
           ),
           AnimatedPositioned(
             duration: Duration(milliseconds: 400),
-            top: show?MediaQuery.of(context).size.height * 0.55:MediaQuery.of(context).size.height * 0.6,
+            top: show
+                ? MediaQuery.of(context).size.height * 0.55
+                : MediaQuery.of(context).size.height * 0.6,
             right: show ? MediaQuery.of(context).size.width * .15 : 20,
             height: 40,
             child: RotatedBox(
@@ -79,7 +81,9 @@ class _HomePageState extends State<HomePage> with AfterLayoutMixin<HomePage> {
           ),
           AnimatedPositioned(
             duration: Duration(milliseconds: 400),
-            top: show?MediaQuery.of(context).size.height * 0.55:MediaQuery.of(context).size.height * 0.6,
+            top: show
+                ? MediaQuery.of(context).size.height * 0.55
+                : MediaQuery.of(context).size.height * 0.6,
             left: show ? MediaQuery.of(context).size.width * .15 : 20,
             height: 40,
             child: RotatedBox(
@@ -98,7 +102,6 @@ class _HomePageState extends State<HomePage> with AfterLayoutMixin<HomePage> {
                     'assets/2.png',
                     color: Colors.black87,
                     height: 300,
-
                   )),
             ),
           ),
